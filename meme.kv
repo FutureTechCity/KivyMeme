@@ -1,0 +1,26 @@
+#:kivy 1.9.0
+#:import utils kivy.utils
+
+<ImageLabel@Label>
+    font_name: "pressuru.otf"
+    color: (1,1,1,1)
+    outline_color: (0,0,0,1)
+    outline_width: pt(2)
+    halign: 'center'
+
+<MemeScreen>:
+    Image:
+        source: 'dog.jpg'
+        size: (root.width, root.height)
+            
+    ImageLabel:
+        font_size: pt(24)
+        center_x: root.width / 2
+        center_y: root.height - pt(18)
+        text: "ON THE INTERNET"
+
+    ImageLabel:
+        font_size: pt(20)
+        center_x: root.width / 2
+        center_y: pt(20)
+        text: "NOBODY KNOWS\nYOU'RE A DOG"
