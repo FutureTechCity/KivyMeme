@@ -12,7 +12,7 @@ You can supply your own font here, or use the one from this repository. This fon
 
 Use an editor to create a `main.py` file. You can copy the following template code into this file:
 
-~~~
+```python
 from kivy.app import App
 from kivy.uix.widget import Widget
 
@@ -25,12 +25,12 @@ class MemeApp(App):
 
 if __name__ == '__main__':
     MemeApp().run()
-~~~
+```
 
 ## Create your layout file
 
 Use an editor to create a `meme.kv` file. You can copy the following template layout into this file:
-~~~
+```
 #:kivy 1.9.0
 #:import utils kivy.utils
 
@@ -57,15 +57,15 @@ Use an editor to create a `meme.kv` file. You can copy the following template la
         center_x: root.width / 2
         center_y: pt(20)
         text: "BOTTOM CAPTION"
-~~~
+```
 
 If you are using your own font, make sure to replace the line `font_name: 'pressuru.otf'` with your own font. Also replace the line `source: 'image.jpg'` with your chosen image file.
 
 ## Test your image meme
 
 You can test by running the following command from the Anaconda prompt:
-~~~
+```bash
 set KIVY_DPI=92
 python main.py --size 210x380
-~~~
+```
 This runs an emulation of an iPhone sized window on your PC monitor.
